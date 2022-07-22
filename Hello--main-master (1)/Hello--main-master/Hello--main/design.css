@@ -1,0 +1,331 @@
+
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  
+  background: repeating-linear-gradient(45deg, #f0f2ed, #f0f2ed 20px, #f8f4eb 20px, #f8f4eb 40px);
+  box-shadow: 0 4px 6px rgba(0,0,0,.2);  
+}
+
+.logo-box {
+  float: left;
+  margin-right: 20px;
+}
+.logo-box a {
+  outline: none;
+  display: block;
+}
+
+.logo-box img {display: block;}
+nav {
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+nav li {
+  display: inline-block;
+  margin-left: 25px;
+  height: 70px;
+  line-height: 70px;
+  transition: .5s linear;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #868686;
+  text-transform: uppercase;
+}
+nav a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  background: #868686;
+  opacity: 0.1;
+  transition: width .5s linear;  
+}
+nav a:hover:after {width: 100%;}
+
+@media screen and (max-width: 660px) {
+  header {text-align: center;}
+  .logo-box {
+    float: none;
+    display: inline-block;
+    margin: 0 0 16px 0;
+  }
+  ul {float: none;}
+  nav li:first-of-type {margin-left: 0;}
+}
+@media screen and (max-width: 550px) {
+nav {overflow: visible;}
+nav li {
+  display: block;
+  margin: 0;
+  height: 40px;
+  line-height: 40px;
+}
+nav li:hover {background: rgba(0,0,0,.1);}
+nav a:after {content: none;}
+}
+
+
+
+.first{
+  padding-left:60px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+
+
+}
+.second {
+  padding: 0px;
+    background-image: url("mainpage_auto_x2.jpg"); /* The image used */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 500px; /* You must set a specified height */
+   /* Center the image */
+   /* Do not repeat the image */
+   margin:0px;
+   
+  
+}
+.third{
+    height:100px;
+    width:100%;
+    background-color: white; 
+}
+.forth{
+    padding: 40px 50px 75px 90px;
+    background-color: white; 
+  height: 250px; 
+  display: flex;
+  justify-content: center;
+}
+
+.cap{
+  padding: 0;
+  position: absolute;
+top:695px;
+left:530px;
+font-size:45px ;
+color: black;
+}
+
+.text{
+  color: black;
+  padding-left: 80px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+  font-style: oblique;
+}
+
+.para{
+  padding-left: 20px;
+  top : 750px;
+  font-family: papyrus;
+  color: gray;
+  font-size: 20px;
+  line-height: 0.1;
+}
+
+.bttn{
+  padding-left: 570px;
+  padding-bottom: 150px;
+}
+.greybck{
+  padding: 25px 50px 75px 100px;
+  background-color: rgb(222, 218, 218);
+  opacity: 0.9;
+  background-size: 300px 100px;
+  height: 800px; 
+  display: flex;
+  justify-content: center;
+}
+.column {
+  margin-left: 50%; 
+  height: 100px;
+  float: left;
+}
+
+.row {
+  width: 50%; 
+  height: 100px;
+}
+.bttn
+{
+  padding-left: 470px;
+  padding-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+
+.magenta {
+  flex: 50%;
+
+} 
+.magenta1{
+  flex: 50%;
+  padding-top: 190px;
+  padding-left: 100px;
+}
+.big{
+  display: flex;
+}
+
+.faq-heading{
+  border-bottom: #777;
+  padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+width: 60%;
+margin: auto;
+
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq-body{
+  margin: auto;
+  /* text-align: center; */
+ width: 50%; 
+ padding: auto;
+ 
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+  background-color: #F9F9F9;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.faq-page:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+.contact {
+  font-weight: bold;
+  font-size: 32px;
+}
+.text{
+  line-height: 0.1;
+}
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-sizing: border-box;
+
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.thro
+{
+  text-align: left;
+  padding-bottom: 50px;
+}
+  
+
+
+
+
+
+
+
+
+
